@@ -18,7 +18,7 @@ class CustomFormField extends StatelessWidget {
           CustomForm(title: "Email", mValid:
           (value)
           {
-            if (value!.isEmpty()) {
+            if (value!.isEmpty) {
               return "Please enter some text";
             } else if (!isEmail(value)) {
               return "Please type Email";
@@ -32,7 +32,7 @@ class CustomFormField extends StatelessWidget {
           CustomForm(title: "Password",
             mValid: (value)
             {
-              if (value!.isEmpty()) {
+              if (value!.isEmpty) {
                 return "비어있다";
               }
               else if(value.toString().length > 20) {
